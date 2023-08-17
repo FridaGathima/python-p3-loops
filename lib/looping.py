@@ -2,12 +2,27 @@
 
 def happy_new_year():
     # code goes here!
-    pass
+    i = 10
+    while i > 0:
+        print(i)
+        i -=1
+        print("Happy New Year!")
 
 def square_integers(int_list):
     # code goes here!
-    pass
-
+    return [number ** 2 for number in int_list]
+  
 def fizzbuzz():
     # code goes here!
-    pass
+    # for i in range(10):
+    # print("Looping!")
+    # print(f"i is: {i}")
+    for num in range (1, 101):
+        if (num % 3 == 0 and num % 5 == 0):
+            print ("FizzBuzz")
+        elif num % 5 == 0:
+            print ("Buzz")
+        elif num % 3 == 0:
+            print ("Fizz")
+        else:
+            print (num)
